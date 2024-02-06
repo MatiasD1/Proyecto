@@ -1,0 +1,31 @@
+header {
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    margin-left: auto; /* Empuja el nav hacia el lado derecho del contenedor flexible */
+}
+.nombreSitio {
+    margin-left: 10px; 
+}
+.logo{
+    width: 90px; 
+}
+
+ul{
+    display: flex;
+    margin-right: 20px; 
+    list-style-type: none;
+}
+
+li a{
+    margin-right: 10px;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: black; /* Cambia el color del texto de los enlaces si es necesario */
+}
+
+footer a{
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: black; /* Cambia el color del texto de los enlaces si es necesario */
+}
