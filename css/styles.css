@@ -1,35 +1,148 @@
+*{
+    margin: 0;
+}
+
 header {
     display: flex;
     align-items: center;
+    height: 80px; /* Altura deseada del encabezado */
+    background-color: aliceblue;
 }
 
-nav{
-    margin-left: auto; /* Empuja el nav hacia el lado derecho del contenedor flexible */
+nav {
+    margin-left: auto;
+    font-family: "Protest Strike", sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    height: 100%; /* Ajustar el tamaño del nav al 100% de la altura del encabezado */
+}
+
+nav li {
+    margin-right: 50px;
+    border-left: 1px solid black;
+    padding: 0 10px;
+    height: 100%; /* Ajustar el tamaño de los elementos li al 100% de la altura de la lista */
+    display: flex;
+    align-items: center;
+}
+.logoPagina{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    margin: 10px;
 }
 .nombreSitio {
-    margin-left: 10px; 
+    margin-left: 10px;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    justify-content: center;
+    color: black;
 }
 .logo{
     width: 90px; 
 }
 
-ul{
+ul {
     display: flex;
-    margin-right: 20px; 
-    list-style-type: none;
+    align-items: center;
+    height: 100%; /* Ajustar el tamaño de la lista al 100% de la altura del nav */
+    margin: 0;
+    padding: 0;
 }
-
 li a{
     margin-right: 10px;
     text-decoration: none; /* Elimina el subrayado de los enlaces */
     color: black; /* Cambia el color del texto de los enlaces */
 }
 
+footer{
+    display: flex;
+}
+
 footer a{
     text-decoration: none; 
     color: black; 
+    margin: 20px;
+}
+/* --- INDEX --- */
+
+.imagenPortada{
+    width: 100%;
 }
 
-.categorias img{
-    width: 500px; 
+.imagenPortada img{
+    width: 100%;
+    height: auto;
 }
+
+/* --- GALERIA --- */
+
+.categorias {
+    width: 100%; /* Ajustar el ancho al 100% del contenedor */
+    display: flex; /* Usar flexbox para alinear las categorías */
+    flex-wrap: wrap; /* Permitir que las categorías se envuelvan a una nueva línea si no caben */
+    align-items: center;
+    justify-content: center;
+}
+
+.categoria {
+    width: calc(50% - 40px); /* Ancho del 50% menos el espaciado (padding) */
+    max-width: 500px; /* Ancho máximo del formulario */
+    margin: 20px; /* Espaciado externo entre las categorías */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-sizing: border-box; /* Ajusta el ancho y alto del formulario para incluir bordes y rellenos */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Sombras con desplazamiento horizontal y vertical de 0px, desenfoque de 10px y color negro con opacidad de 0.5 */
+}
+.categoria img{
+    max-width: 100%;
+    height: auto;
+    width: 700px;
+    height: 350px;
+    display: block;
+}
+
+.categoria h2{
+    display: flex;
+    font-family: "Protest Strike", sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+/* --- REGLAS --- */
+
+/* --- NOSOTROS --- */
+
+/* --- CONTACTO --- */
+
+.formulario {
+    display: flex;
+    justify-content: center; /* Para centrar horizontalmente */
+    align-items: center; /* Para centrar verticalmente */
+    height: 100vh; /* Opcional: para ocupar toda la altura de la ventana */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+.formulario h1{
+    padding: 20px;
+    font-family: "Protest Strike", sans-serif;
+    font-style: normal;
+    font-size: 45px;
+}
+form{
+    width: 50%; /* Ancho del formulario */
+    max-width: 500px; /* Ancho máximo del formulario */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-sizing: border-box; /* Ajusta el ancho y alto del formulario para incluir bordes y rellenos */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Sombras con desplazamiento horizontal y vertical de 0px, desenfoque de 10px y color negro con opacidad de 0.5 */
+    display: flex;
+    flex-direction: column; /* Alinear los elementos del formulario en una columna */
+    justify-content: center; /* Para centrar horizontalmente */
+    align-items: center; /* Para centrar verticalmente */
+}
+
